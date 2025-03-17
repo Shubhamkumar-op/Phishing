@@ -1,0 +1,13 @@
+streamlit
+scikit-learn
+numpy
+pandas
+matplotlib
+seaborn
+xgboost
+nltk
+wordcloud
+beautifulsoup4
+selenium
+networkx
+pillow
