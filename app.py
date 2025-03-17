@@ -2,7 +2,7 @@ import streamlit as st
 import pickle
 
 # Load the trained model
-with open('phishing_model.pkl', 'rb') as file:
+with open('model/phishing_model.pkl', 'rb') as file:
     model = pickle.load(file)
 
 # Streamlit UI
