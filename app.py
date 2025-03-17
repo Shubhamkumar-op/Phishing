@@ -1,15 +1,12 @@
 import streamlit as st
 import pickle
 
-# Load the trained model
 with open('model/phishing_model.pkl', 'rb') as file:
     model = pickle.load(file)
 
-# Streamlit UI
 st.title("Phishing URL Detection")
 st.write("Enter a URL below to check if it's safe or a phishing attempt.")
 
-# Input field for URL
 url_input = st.text_input("Enter URL:")
 
 if st.button("Check URL"):
@@ -22,10 +19,10 @@ if st.button("Check URL"):
     else:
         st.warning("Please enter a URL to check.")
 
-# Display model accuracy (optional, if you want to display it in your Streamlit app)
+
 st.subheader("Model Performance")
 accuracy_scores = {
-    "XGBoost": 0.92,  # Update with actual accuracy
+    "XGBoost": 0.92, 
     "Decision Tree": 0.89,
     "Random Forest": 0.91,
     "MLP": 0.88,
